@@ -1,0 +1,73 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hil-testgen"
+version = "0.1.0"
+description = "Automatically generate structured HIL/SIL/MIL test cases from requirements documents locally"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+authors = [
+  { name = "MohammedAli", email = "muneebali2023@gmail.com" }
+]
+keywords = [
+  "HIL",
+  "SIL", 
+  "MIL",
+  "automotive",
+  "testing",
+  "test-case-generation",
+  "embedded-systems",
+  "ECU",
+  "requirements",
+  "ollama"
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Science/Research",
+  "Topic :: Software Development :: Testing",
+  "Topic :: Scientific/Engineering :: Automotive",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+]
+
+dependencies = [
+  "python-docx>=1.1.0",
+  "openpyxl>=3.1.0",
+  "pandas>=2.0.0",
+  "pdfplumber>=0.10.0",
+  "ollama>=0.2.0",
+  "rich>=13.0.0",
+  "click>=8.1.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.0.0",
+  "build>=1.0.0",
+  "twine>=5.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/aliemuneeb/hil-testgen"
+Repository = "https://github.com/aliemuneeb/hil-testgen"
+"Bug Tracker" = "https://github.com/aliemuneeb/hil-testgen/issues"
+
+[project.scripts]
+hil-testgen = "hil_testgen.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["hil_testgen*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
