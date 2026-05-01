@@ -2,7 +2,7 @@
 Base parser — all parsers inherit from this.
 Defines the shared interface and common utilities.
 """
-
+from __future__ import annotations
 from abc import ABC, abstractmethod
 from pathlib import Path
 

@@ -19,7 +19,7 @@ Layout C — vertical/stacked (less common):
     | Test Method   | Load known values...   |
     | Pass Criteria | Within ±0.00001°       |
 """
-
+from __future__ import annotations
 import pandas as pd
 from pathlib import Path
 from hil_testgen.parser.base_parser import BaseParser

@@ -7,7 +7,7 @@ If you get poor results, convert your PDF to .docx first:
   - Online: smallpdf.com, ilovepdf.com
   - Or simply copy/paste content into a Word doc
 """
-
+from __future__ import annotations
 import re
 from pathlib import Path
 from hil_testgen.parser.base_parser import BaseParser

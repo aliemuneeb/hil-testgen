@@ -2,7 +2,7 @@
 Confidence scorer — rates how reliable each generated test case is.
 Based on how complete the original requirement was.
 """
-
+from __future__ import annotations
 
 class ConfidenceScorer:
     """

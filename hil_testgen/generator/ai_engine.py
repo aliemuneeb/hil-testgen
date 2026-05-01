@@ -3,7 +3,7 @@ AI Engine — sends parsed requirements to Ollama
 and gets back structured test cases.
 100% local. No data leaves the machine.
 """
-
+from __future__ import annotations
 import json
 import re
 from hil_testgen.generator.confidence_scorer import ConfidenceScorer

@@ -2,7 +2,7 @@
 DOCX parser — extracts requirements from Word documents.
 Handles the most common HIL requirements format.
 """
-
+from __future__ import annotations
 from pathlib import Path
 from docx import Document
 from hil_testgen.parser.base_parser import BaseParser

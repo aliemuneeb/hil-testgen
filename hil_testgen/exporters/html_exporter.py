@@ -2,7 +2,7 @@
 HTML exporter — generates a clean visual report.
 Opens in any browser. No dependencies needed to view.
 """
-
+from __future__ import annotations
 from pathlib import Path
 from datetime import datetime
 

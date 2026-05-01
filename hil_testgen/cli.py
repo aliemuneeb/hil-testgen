@@ -10,7 +10,7 @@ Usage:
     hil-testgen generate requirements.docx --verbose
     hil-testgen info
 """
-
+from __future__ import annotations
 import click
 from rich.console import Console
 from rich.panel import Panel

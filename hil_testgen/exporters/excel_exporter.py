@@ -2,7 +2,7 @@
 Excel exporter — saves generated test cases to .xlsx
 Three tabs: Generated, Needs Review, Summary
 """
-
+from __future__ import annotations
 from pathlib import Path
 from openpyxl import Workbook
 from openpyxl.styles import (

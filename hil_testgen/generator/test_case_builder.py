@@ -3,7 +3,7 @@ Test case builder — lightweight post-processor.
 Cleans and standardises AI output before export.
 """
 
-
+from __future__ import annotations
 class TestCaseBuilder:
     """
     Cleans and standardises generated test cases.
